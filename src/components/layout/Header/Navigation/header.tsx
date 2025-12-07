@@ -1,6 +1,8 @@
 "use client"; 
 import { useState } from "react";
-import Image from "next/image";
+import Link from "next/link";
+import AboutPage from "@/app/AboutUs/page";
+
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -9,7 +11,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50 bg-amber-200/80 backdrop-blur">
       <nav className="flex items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img src="/img/logo.png" alt="logo" className="h-16 w-16" />
           </a>
         </div>
@@ -25,8 +27,8 @@ export default function Header() {
 
         <div className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-md font-semibold text-gray-800">Product</a>
-          <a href="#" className="text-md font-semibold text-gray-800">Features</a>
-          <a href="#" className="text-md font-semibold text-gray-800">Company</a>
+          <Link href="/AboutUs" className="text-md font-semibold text-gray-800">About Us</Link>
+          <a href="#" className="text-md font-semibold text-gray-800">Our Commitment</a>
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -48,16 +50,35 @@ export default function Header() {
             </div>
 
             <nav className="space-y-4">
-              {["Product", "Features", "Company", "Log in"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-900 bg-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-orange-400 hover:text-white transition"
-                >
-                  {item}
-                </a>
+              {[
+                { name: "Product", href: "#" },
+                { name: "About Us", href: "/AboutUs" },
+                { name: "Company", href: "#" },
+                { name: "Our Commitment", href: "#" },
+                { name: "Log in", href: "#" },
+              ].map((item) => (
+                item.href.startsWith("/") ? (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-gray-900 bg-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-orange-400 hover:text-white transition"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-gray-900 bg-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-orange-400 hover:text-white transition"
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
             </nav>
+
           </div>
         </div>
       )}

@@ -6,17 +6,15 @@ import Link from 'next/link';
 import { useState } from "react";
 
 const Gallery = () => {
-    // Track which image info is open in mobile
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const handleMobileTap = (index: number) => {
-        // Toggle: if currently open → close, else open
         setActiveIndex(prev => prev === index ? null : index);
     };
 
     return (
         <section>
-            <div className='container mx-auto lg:max-w-screen-xl md:max-w-screen-md' id='gallery-section'>
+            <div className='container mx-auto mt-8 lg:max-w-7xl md:max-w-3xl' id='gallery-section'>
                 <div className="text-center">
                     <h2 className="text-3xl lg:text-5xl font-sans font-semibold text-black dark:text-white">
                         Gallery of our Popular Product.
@@ -36,7 +34,7 @@ const Gallery = () => {
                                 <div 
                                     key={index} 
                                     className="overflow-hidden rounded-3xl mb-6 relative group"
-                                    onClick={() => handleMobileTap(index)} // enable tap
+                                    onClick={() => handleMobileTap(index)} 
                                 >
                                     <Image
                                         src={item.src}
@@ -46,9 +44,6 @@ const Gallery = () => {
                                         className="object-cover w-full h-full"
                                     />
 
-                                    {/* Mobile: toggle using state
-                                        Desktop: show on hover
-                                    */}
                                     <div
                                         className={`
                                             w-full h-full absolute bg-black/40 
