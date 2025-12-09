@@ -26,9 +26,9 @@ export default function Header() {
         </button>
 
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-md font-semibold text-gray-800">Product</a>
+          <a href="/Product" className="text-md font-semibold text-gray-800">Product</a>
           <Link href="/AboutUs" className="text-md font-semibold text-gray-800">About Us</Link>
-          <a href="#" className="text-md font-semibold text-gray-800">Our Commitment</a>
+          <a href="/Commitment" className="text-md font-semibold text-gray-800">Our Commitment</a>
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -51,10 +51,10 @@ export default function Header() {
 
             <nav className="space-y-4">
               {[
-                { name: "Product", href: "#" },
+                { name: "Product", href: "/Product" },
                 { name: "About Us", href: "/AboutUs" },
                 { name: "Company", href: "#" },
-                { name: "Our Commitment", href: "#" },
+                { name: "Our Commitment", href: "/Commitment" },
                 { name: "Log in", href: "#" },
               ].map((item) => (
                 item.href.startsWith("/") ? (

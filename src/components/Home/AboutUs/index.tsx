@@ -33,7 +33,7 @@ const Features = () => {
                     Momoholic is more than just a food vendor, it is a dedication to a culinary legacy forged high in the himalayas. Our journey is one built not on compromise, but on the relentless pursuit of authentic flavour and quality craftsmanship. We believe that the simplest foods often carry the deepest stories, and for us, that story is encapsulated entirely within the delicate folds of the momo.
                 </p>
 
-                <button className="lg:mt-10 mt-6 lg:px-6 px-4 lg:py-4 py-2 bg-green-600 rounded-sm lg:text-xl text-sm text-white font-semibold hover:text-stone-500">Read More</button>
+                <a href="/AboutUs" className="lg:mt-10 mt-6 lg:px-6 px-4 lg:py-4 py-2 bg-green-600 rounded-sm lg:text-xl text-sm text-white font-semibold hover:text-stone-500">Read More</a>
 
             </div>
 

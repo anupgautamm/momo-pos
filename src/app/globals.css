@@ -24,3 +24,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.animate-bg {
+  background: linear-gradient(45deg, #ffcf97, #ff9e7b, #ff2a68, #ffc88a, #967753, #44392d);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes bgOpacity {
+  0% { opacity: 0.85; }
+  50% { opacity: 1; }
+  100% { opacity: 0.85; }
+}
+
+.animate-bgOpacity {
+  animation: bgOpacity 6s ease-in-out infinite;
+}
+
