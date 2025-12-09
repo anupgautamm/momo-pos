@@ -46,7 +46,7 @@ const Footer: FC = () => {
             <ul>
               <li className="pb-5">
                 <Link
-                  href="#"
+                  href="/AboutUs"
                   className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
                 >
                   About
@@ -62,7 +62,7 @@ const Footer: FC = () => {
               </li>
               <li className="pb-5">
                 <Link
-                  href="#"
+                  href="/Product"
                   className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Product
@@ -78,7 +78,7 @@ const Footer: FC = () => {
               </li>
               <li className="pb-5">
                 <Link
-                  href="#"
+                  href="/Commitment"
                   className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
                 >
                   How we work?
