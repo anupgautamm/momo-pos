@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-amber-200/80 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur bg-[#FBDD9D]">
       <nav className="flex items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="flex items-center">

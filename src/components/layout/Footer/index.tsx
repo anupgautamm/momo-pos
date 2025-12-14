@@ -10,7 +10,7 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-5 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16">
           <div className="col-span-2">
             <Logo />
-            <p className="text-xs font-sans font-medium text-grey dark:text-white/50 mt-5 mb-16 max-w-70%">
+            <p className="text-xs font-sans font-medium text-grey text-gray-900 mt-5 mb-16 max-w-70%">
               Open an account in minutes, get your momo 
               enjoy for much longer with authentic taste.
             </p>
@@ -20,7 +20,7 @@ const Footer: FC = () => {
                   icon="fa6-brands:facebook-f"
                   width="16"
                   height="16"
-                  className=" group-hover:text-white text-black"
+                  className=" group-hover:text-white text-gray-900"
                 />
               </Link>
               <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow-xl p-3">
@@ -28,7 +28,7 @@ const Footer: FC = () => {
                   icon="fa6-brands:instagram"
                   width="16"
                   height="16"
-                  className=" group-hover:text-white text-black"
+                  className=" group-hover:text-white text-gray-900"
                 />
               </Link>
               <Link href="#" className="group bg-white hover:bg-primary rounded-full shadow-xl p-3">
@@ -36,18 +36,18 @@ const Footer: FC = () => {
                   icon="fa6-brands:x-twitter"
                   width="16"
                   height="16"
-                  className=" group-hover:text-white text-black"
+                  className=" group-hover:text-white text-gray-900"
                 />
               </Link>
             </div>
           </div>
           <div className="">
-            <h4 className="text-black dark:text-white mb-9 font-semibold text-xl">Company</h4>
+            <h4 className="text-gray-900 mb-9 font-semibold text-xl">Company</h4>
             <ul>
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   About
                 </Link>
@@ -55,7 +55,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Careers
                 </Link>
@@ -63,7 +63,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Product
                 </Link>
@@ -71,7 +71,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Blog
                 </Link>
@@ -79,7 +79,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   How we work?
                 </Link>
@@ -87,12 +87,12 @@ const Footer: FC = () => {
             </ul>
           </div>
           <div className="">
-            <h4 className="text-black dark:text-white mb-9 font-semibold text-xl">Information</h4>
+            <h4 className="text-gray-900 mb-9 font-semibold text-xl">Information</h4>
             <ul>
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                  className="text-gray-900 dark:hover:text-primary hover:text-primary text-base"
                 >
                   Help/FAQ
                 </Link>
@@ -100,7 +100,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Affiliates
                 </Link>
@@ -108,7 +108,7 @@ const Footer: FC = () => {
               <li className="pb-5">
                 <Link
                   href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
+                  className="text-gray-900 hover:text-primary dark:hover:text-primary text-base"
                 >
                   Privacy Policy
                 </Link>
@@ -117,7 +117,7 @@ const Footer: FC = () => {
           </div>
         </div>
         <div className="border-t border-grey/15 dark:border-white/15 py-10 flex justify-between items-center">
-          <p className="text-sm text-black/70 dark:text-white/70">
+          <p className="text-sm text-gray-900">
             @2025 - MOMOHOLIC. Developed by <Link href="##" className="hover:text-primary">Anup Gautam</Link>
           </p>
         </div>
